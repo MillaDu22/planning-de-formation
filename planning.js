@@ -2,18 +2,18 @@
 const projets = [
     { nom: "P1-Planning de formation", duree: 20 },
     { nom: "P2-Booki", duree: 117 },
-    { nom: "P3", duree: 103 },
-    { nom: "P4", duree: 42 },
-    { nom: "P5", duree: 1 },
-    { nom: "P6", duree: 104 },
-    { nom: "P7", duree: 100 },
-    { nom: "P8", duree: 1 },
-    { nom: "P9", duree: 84 },
-    { nom: "P10", duree: 74 },
-    { nom: "P11", duree: 80 },
-    { nom: "P12", duree: 64 },
-    { nom: "P13", duree: 115 },
-    { nom: "P14", duree: 116 }
+    { nom: "P3-Omyfood", duree: 103 },
+    { nom: "P4-GameOn", duree: 42 },
+    { nom: "P5-Exercices interactifs", duree: 1 },
+    { nom: "P6-FishEye", duree: 104 },
+    { nom: "P7-Les petits plats", duree: 100 },
+    { nom: "P8-Exercices interactifs", duree: 1 },
+    { nom: "P9-Billed", duree: 84 },
+    { nom: "P10-Association soutien", duree: 74 },
+    { nom: "P11-Kasa", duree: 80 },
+    { nom: "P12-SportSee", duree: 64 },
+    { nom: "P13-Remede Agency", duree: 115 },
+    { nom: "P14-HRnet", duree: 116 }
 ];
 
 // Date début de formation
