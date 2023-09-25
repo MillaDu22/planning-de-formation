@@ -130,7 +130,7 @@ td:nth-child(2n+6) {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr); /* 7 colonnes pour 14 projets (quinconce) */
+  grid-template-columns: repeat(1, 1fr); /* 1 colonne pour 14 projets (quinconce) */
   gap: 20px; /* Espacement entre les projets */
   padding: 20px; /* Espacement intérieur de la grille */
 }
@@ -141,12 +141,12 @@ td:nth-child(2n+6) {
   box-shadow: 0 0 10px white; /* Ajoute une ombre légère */
 }
 
-/* Style spécifique à chaque projet, personnalisez comme nécessaire */
-.project-card:nth-child(odd) {
+/* Style spécifique à chaque projet*/
+.project-competences:nth-child(odd) {
   text-align: left; /* Projet impair aligné à gauche */
 }
 
-.project-card:nth-child(even) {
+.project-competences:nth-child(even) {
   text-align: right; /* Projet pair aligné à droite */
 }
 
