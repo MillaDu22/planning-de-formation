@@ -17,6 +17,7 @@ header {
 }
 
 .title-planning {
+  padding-top:50px;
   color:white;
   text-align: center;
 }
@@ -57,15 +58,9 @@ td:nth-child(2n+4) {
   color: white;
 }
 
-td:nth-child(2n+5) {
-  background-color: #ff9999;
-}
-
-td:nth-child(2n+6) {
-  background-color: #ff8080;
-}
-
+/*Cards projets*/
 .title-section-cards {
+  padding-top:50px;
   color:white;
   text-align: center;
 }
@@ -120,7 +115,11 @@ td:nth-child(2n+6) {
   text-decoration: underline;
 }
 
-/*Fiches compétences ciblées*/
+a:hover {
+  color: darkcyan;
+}
+
+/*Fiches projets*/
 .competences-section {
   margin: 0;
   padding: 0;
@@ -132,24 +131,92 @@ td:nth-child(2n+6) {
   display: grid;
   grid-template-columns: repeat(1, 1fr); /* 1 colonne pour 14 projets (quinconce) */
   gap: 20px; /* Espacement entre les projets */
-  padding: 20px; /* Espacement intérieur de la grille */
-}
-
-.project-competences {
-  border: 1px solid darkgray;
   padding: 20px;
-  box-shadow: 0 0 10px white; /* Ajoute une ombre légère */
 }
 
-/* Style spécifique à chaque projet*/
-.project-competences:nth-child(odd) {
+.project-competences-impair {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 20px;
+  position:relative;
+}
+
+.project-competences-pair {
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 20px;
+  position:relative;
+}
+
+.box-pair, .box-impair {
+  background:darkgray;
+  display: flex;
+  flex-direction: column;
+  Width:48%;
+  padding:1%;
+  text-align:left;
+  border: 1px solid grey;
+  box-shadow: 0 0 10px white;
+  cursor:pointer;
+  overflow: hidden;
+}
+.box-impair {
+  margin-left:7%;
+  border-radius:10px 0px 0px 10px;
+}
+.box-pair {
+  margin-right: 7%;
+  border-radius:0px 10px 10px 0px;
+}
+
+.project-competences-impair:nth-child(odd) {
   text-align: left; /* Projet impair aligné à gauche */
 }
 
-.project-competences:nth-child(even) {
+.project-competences-pair:nth-child(even) {
   text-align: right; /* Projet pair aligné à droite */
 }
 
+.description-pair {
+  width:20%;
+  overflow: hidden;
+  background:darkslategrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  padding-left: 2%;
+  padding-right:2%;
+  margin-left:7%;
+  border-radius:10px 0px 0px 10px;
+  box-shadow: 0 0 10px white;
+  position:relative;
+  opacity: 0; /* masque la description avec l'opacité à 0 */
+  transition: opacity 1s ease; /* Ajoute la transition pour l'animation d'opacité */
+}
+
+.description-impair {
+  width:20%;
+  overflow: hidden;
+  margin-right: 7%;
+  padding-left: 2%;
+  text-align: left;
+  background:darkslategray;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius:0px 10px 10px 0px;
+  box-shadow: 0 0 10px white;
+  position:relative;
+  opacity: 0; /* masque la description avec l'opacité à 0 */
+  transition: opacity 1s ease; /* Ajoute la transition pour l'animation d'opacité */
+}
+.project-competences-impair:hover .description-impair,
+.project-competences-pair:hover .description-pair {
+  opacity: 1; /* Augmente l'opacité au survol pour afficher la description */
+}
 
 footer {
   display:flex;
