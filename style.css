@@ -24,7 +24,7 @@ header {
 .section-calendar {
   width:100%;
   display:flex;
-  flex-direction:row;
+  flex-direction:column;
   justify-content: center;
   align-items: center;
   margin: 0%;
@@ -149,6 +149,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding-bottom:40px;
 }
 
 .project-competences-pair {
@@ -156,6 +157,7 @@ a:hover {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
+  padding-bottom:40px;
 }
 
 .box-pair, .box-impair {
