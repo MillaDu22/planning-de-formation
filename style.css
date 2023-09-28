@@ -149,7 +149,6 @@ a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 20px;
 }
 
 .project-competences-pair {
@@ -157,7 +156,6 @@ a:hover {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  padding: 20px;
 }
 
 .box-pair, .box-impair {
