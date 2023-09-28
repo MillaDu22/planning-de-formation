@@ -182,6 +182,7 @@ a:hover {
 }
 
 .description-pair {
+  height:0;
   width:70%;
   overflow: hidden;
   background:rgba(0, 139, 139, 0.562);
@@ -199,6 +200,7 @@ a:hover {
 }
 
 .description-impair {
+  height:0;
   width:70%;
   overflow: hidden;
   margin-left: 7%;
@@ -217,6 +219,7 @@ a:hover {
 .project-competences-impair:hover .description-impair,
 .project-competences-pair:hover .description-pair {
   opacity: 1; /* Augmente l'opacité au survol pour afficher la description */
+  height:auto;
 }
 
 footer {
