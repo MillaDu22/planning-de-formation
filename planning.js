@@ -1,6 +1,6 @@
 // Liste projets avec noms et durées en heures
 const projets = [
-    { nom: "P1-Planning de formation", duree: 20 },
+    { nom: "P1-Mon plan de formation", duree: 20 },
     { nom: "P2-Booki", duree: 117 },
     { nom: "P3-Omyfood", duree: 103 },
     { nom: "P4-GameOn", duree: 42 },
@@ -9,10 +9,10 @@ const projets = [
     { nom: "P7-Les petits plats", duree: 100 },
     { nom: "P8-Exercices interactifs", duree: 1 },
     { nom: "P9-Billed", duree: 84 },
-    { nom: "P10-Association soutien", duree: 74 },
+    { nom: "P10-Learn@Home", duree: 74 },
     { nom: "P11-Kasa", duree: 80 },
     { nom: "P12-SportSee", duree: 64 },
-    { nom: "P13-Remede Agency", duree: 115 },
+    { nom: "P13-Argent-Bank", duree: 115 },
     { nom: "P14-HRnet", duree: 116 }
 ];
 
